@@ -2,10 +2,11 @@ name: FilterActivityTypes
 on:
   push:
     branches:
-    - main
+      - main
     paths:
-    - 'src/**'  
-    - '.github/workflows/01-FilterActivityTypes.yml'
+      - 'src/**'
+      - '.github/workflows/01-FilterActivityTypes.yml'
+  workflow_dispatch:
 jobs:
   filter-activity-types:
     runs-on: ubuntu-latest
