@@ -1,0 +1,22 @@
+name: FilterActivityTypes
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'src/**'  
+    - '.github/workflows/01-FilterActivityTypes.yml'
+jobs:
+  filter-activity-types:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Filter Activity Types
+      run: |
+        echo "Filtering activity types..."
+        # Add your filtering logic here
+        # For example, you could run a script or command to filter activity types
+        # ./scripts/filter_activity_types.sh
+        echo "Activity types filtered successfully."
