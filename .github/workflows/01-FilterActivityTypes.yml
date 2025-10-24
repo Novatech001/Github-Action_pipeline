@@ -15,7 +15,7 @@ jobs:
 
     - name: Filter Activity Types
       run: |
-        echo "Filtering activity types..."
+        echo "what is avtivity types"
         # Add your filtering logic here
         # For example, you could run a script or command to filter activity types
         # ./scripts/filter_activity_types.sh
